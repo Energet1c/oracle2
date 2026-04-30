@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{book['tag']}}</h1>
+<br>
+<p1>{{book['journal']}}</p1>
+<br>
+<a href="{{book['olympus']}}">
+    <img src="{{ book['olympus'] }}" alt="Jon">
+</a>
+<br>
+<p1>Last Editor: {{book['last_editor']}}</p1>
+
+
+
+{% endblock %}

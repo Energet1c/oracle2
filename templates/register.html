@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %} 
+<div class="topnav">
+    {% for tag in tags %}
+
+        <a href="/register/{{tag[0]}}">{{tag[0]}}</a>
+
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
+
+
+
+    <!--
+<ul>
+
+    {% for item in results %}
+        <li><a href="{{ pages[item] }}" target="_blank">{{ item }}</a></li>
+    {% endfor %}
+
+</ul>
+-->
